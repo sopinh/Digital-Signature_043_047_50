@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* Define CSS variables for colors */
+:root {
+  --navbar-bg-color: #097b2f; /* Default warna navbar */
+  --menu-pembangkitan-bg-color: #4ebc55; /* Warna hijau untuk Menu Pembangkitan */
+  --menu-digital-signature-bg-color: #28a745; /* Warna merah untuk Menu Digital Signature */
+  --card-header-bg-color: #36ce71; /* Warna biru default untuk header kartu */
+  --card-shadow-color: rgba(0, 0, 0, 0.1);
+  --card-border-radius: 10px;
+  --btn-primary-bg-color: #1c8444;
+  --btn-primary-hover-bg-color: #3ca94e;
+  --btn-primary-active-bg-color: #1bbc56;
+  --btn-primary-active-shadow-color: #4af488; 
+  --btn-danger-bg-color: #dc3545;
+  --btn-danger-hover-bg-color: #c82333;
+  --btn-danger-active-bg-color: #bd2130;
+  --signing-card-bg-color: #a9ecb0; /* Warna untuk kartu Signing */
+  --verifying-card-bg-color: #a4edad; /* Warna untuk kartu Verifying */
+}
+
+body {
+  background-color: #bef0be;
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color) !important;
+}
+
+.card {
+  border: none;
+  border-radius: var(--card-border-radius);
+  box-shadow: 0 4px 8px var(--card-shadow-color);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: var(--card-header-bg-color);
+  color: white;
+  border-bottom: none;
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+.menu-pembangkitan .card-header {
+  background-color: var(--menu-pembangkitan-bg-color);
+  /* color: black;  */
+}
+
+.menu-digital-signature .card-header {
+  background-color: var(--menu-digital-signature-bg-color);
+}
+
+.card-signing {
+  background-color: var(--signing-card-bg-color);
+}
+
+.card-verifying {
+  background-color: var(--verifying-card-bg-color);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+h1, h2, h4, h5 {
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover-bg-color);
+}
+
+.btn-primary:active, .btn-primary:focus {
+  background-color: var(--btn-primary-active-bg-color) !important;
+  box-shadow: 0 1px 2px var(--btn-primary-active-shadow-color) !important;
+}
+
+.btn-danger {
+  background-color: var(--btn-danger-bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-danger:hover {
+  background-color: var(--btn-danger-hover-bg-color);
+}
+
+.btn-danger:active, .btn-danger:focus {
+  background-color: var(--btn-danger-active-bg-color) !important;
+  box-shadow: 0 1px 2px var(--btn-danger-active-shadow-color) !important;
+}
